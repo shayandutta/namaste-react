@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1>hello hello top of root div</h1>
+    <div id="root">
+      shayan is here!
+      <!--
+      // this is the root div where we render the react components by root.render
+      // shayan is here will be replaced by the react component that we will render 
+      // first shayan is here will be rendered but as soon as the script react tags runs, the browser loads react & react-dom into our app 
+      then after reaching the app.js file, browser will load the app.js file and the shayan is here will be replaced by the react component
+       it will be replaced by the react component
+      -->
+    </div>
+    <h1>hello below the root div</h1>
+    <!--react will be injected just within the root, other html tags outside the root will work
+    thats why we call react as a library, as it can be applied anywhere, to even a small component & not a framework(framework takes full 
+    fledged thing and takes complete control, but react is not like that)-->
+
+    <!-- <h1>Hello World</h1> -->
+    <!-- <script>
+            // console.log('Hello World') //does not work like this
+            const heading = document.createElement("h1"); //creating the h1 tag as an element in javascript
+            heading.innerHTML = "Hello World from JavaScript"; //adding the text to the h1 tag created inside javascript
+            //now will have to push the heading inside the root div
+            //first of all need to get the root
+
+            const root = document.getElementById("root"); //getting the root div and storing it in the root variable
+            //now after getting the root div, we will have to push the heading inside the root
+            root.appendChild(heading); //pushing the heading inside the root div as a child of the root div
+        </script> -->
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!--
+    always keep the react and react-dom script tags before the app.js script
+    tag as the app.js file will be using the react and react-dom libraries to
+    create the components and render them on the screen
+    -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
