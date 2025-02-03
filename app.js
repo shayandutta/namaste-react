@@ -1,3 +1,8 @@
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
 // const heading = React.createElement("h1", { id: "heading" }, "hello dojo!"); //heading -> react element & react element is nothing but a javascript object
 // console.log(heading);//we find javascript object in the console
 // const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,12 +30,13 @@
 
 
 // nested react
+//nested react
 
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("h1", { id: "child" }, [
-    React.createElement("h1", {}, "i am an h1 tag"),
-    React.createElement("h2", {}, "i am an h2 element"),
+    React.createElement("h1", {}, "this is namaste react"),
+    React.createElement("h2", {}, "this is namaste react"),
   ]),
   React.createElement("h1", { id: "child2" }, [
     React.createElement("h1", {}, "i am an h1 tag"),
